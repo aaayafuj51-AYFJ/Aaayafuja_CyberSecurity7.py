@@ -1,6 +1,7 @@
 # Aaayafuj Cybersecurity Suite 7
 
-A modular, high-performance Python CLI toolset for security auditing, network scanning, and system integrity verification.
+* A modular, high-performance Python CLI toolset for security auditing, network scanning, and system integrity verification.
+<img width="1458" height="822" alt="Screenshot 2026-02-05 235212" src="https://github.com/user-attachments/assets/db42d1ff-cd5f-47be-a93c-ce7cdaf2c555" />
 
 ## ⚠️ CRITICAL: FIX FOR WINDOWS "FATAL ERROR"
 If you see `Fatal error in launcher: Unable to create process...` when running `pip`, **DO NOT PANIC**. Your Python installation is fine, but the Windows pip launcher is broken.
