@@ -1,0 +1,8 @@
+{
+  "name": "Aaayafuj Cybersecurity Command Center",
+  "description": "A high-performance security monitoring and management interface designed for the Aaayafuj ecosystem, featuring real-time diagnostics, terminal emulation, and code-level architectural visualization.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

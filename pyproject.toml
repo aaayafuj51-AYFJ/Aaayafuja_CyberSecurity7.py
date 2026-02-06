@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aaayafuj"
+version = "7.0.4"
+authors = [
+    { name = "Aaayafuj Cybersecurity", email = "research@aaayafuj.net" }
+]
+description = "Professional Research & Defense Framework"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+    "pyyaml>=6.0.1",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+aaayafuj = "aaayafuj.cli:main"
+
+[tool.setuptools]
+packages = ["aaayafuj", "aaayafuj.core", "aaayafuj.commands", "aaayafuj.scan", "aaayafuj.utils", "aaayafuj.system"]
