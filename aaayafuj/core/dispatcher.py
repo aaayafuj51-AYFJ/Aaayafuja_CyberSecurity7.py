@@ -1,8 +1,9 @@
 import json
 import time
 import os
+import sys
 import platform
-from aaayafuj.utils.formatter import Formatter, BOLD, RESET
+from aaayafuj.utils.formatter import Formatter, BOLD, RESET, RED, YELLOW, GREEN
 
 class Dispatcher:
     def __init__(self, args):
@@ -33,7 +34,7 @@ class Dispatcher:
             'user': lambda: self._handle_category('User', command),
             'config': lambda: self._handle_category('Config', command),
             'update': lambda: self._handle_category('Update', command),
-            'doctor': lambda: self._handle_maintenance('Doctor'),
+            'doctor': self._handle_doctor,
             'repair': lambda: self._handle_maintenance('Repair'),
             'cleanup': lambda: self._handle_maintenance('Cleanup'),
             'self-check': lambda: self._handle_maintenance('Self-Check'),
@@ -76,6 +77,42 @@ class Dispatcher:
         }
         self._output(data, "SYSTEM STATUS")
 
+    def _handle_doctor(self):
+        """Perform a real diagnostic of the Python environment to catch 'Fatal Error' issues."""
+        print(f"\n{BOLD}🔍 Aaayafuj Environment Diagnostic (Doctor Mode){RESET}")
+        print("-" * 50)
+        
+        # Check Python Version
+        py_ver = platform.python_version()
+        print(f"[*] Python Version: {py_ver}")
+        
+        # Check Executable Path
+        py_exe = sys.executable
+        print(f"[*] Python Path: {py_exe}")
+        
+        # Detect broken Pip Launcher context
+        if "Python314" in py_exe and os.name == "nt":
+            print(f"{YELLOW}[!] Notice: You are on Python 3.14 (Beta/New).{RESET}")
+            print(f"{YELLOW}[!] Ensure you use 'python -m pip' to avoid launcher errors.{RESET}")
+
+        # Check for core dependencies
+        deps = ['requests', 'cryptography', 'yaml']
+        missing = []
+        for d in deps:
+            try:
+                __import__(d)
+                print(f"{GREEN}[+] Dependency {d}: OK{RESET}")
+            except ImportError:
+                missing.append(d)
+                print(f"{RED}[-] Dependency {d}: MISSING{RESET}")
+
+        if missing:
+            print(f"\n{RED}[FIX]{RESET} Run: {BOLD}python -m pip install {' '.join(missing)}{RESET}")
+        else:
+            print(f"\n{GREEN}[SUCCESS]{RESET} Your environment looks healthy!")
+            print(f"[*] If you still see 'Fatal error in launcher', always run the tool via:")
+            print(f"    {BOLD}python main.py{RESET}")
+
     def _handle_uptime(self):
         uptime = int(time.time() - self.start_time)
         Formatter.success(f"Aaayafuj Engine Uptime: {uptime} seconds")
@@ -107,7 +144,6 @@ Developed by Aaayafuj Cybersecurity Team.
             Formatter.info(f"[DRY-RUN] {msg}")
             return
 
-        # Mock data generation for the "Real Tool Design" feel
         data = {
             "operation": command,
             "status": "COMPLETED",
