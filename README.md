@@ -1,79 +1,89 @@
-# Aaayafuj Cybersecurity Suite 7
+# Aaayafuj Cybersecurity Suite 7 (ACS7)
 
-* A modular, high-performance Python ecosystem for security auditing, network scanning, and system integrity verification.
-<img width="1458" height="822" alt="Screenshot 2026-02-05 235212" src="https://github.com/user-attachments/assets/7c854af8-b547-4d78-86f5-46443a957e0d" />
+![Aaayafuj Banner](https://raw.githubusercontent.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py/main/assets/banner_preview.png)
 
-## 🚀 NEW: AAAYAFUJ NET (Desktop GUI)
-For a full visual experience, run the advanced Desktop UI:
+**Aaayafuj Cybersecurity Suite 7** is a modular, high-performance Python framework engineered for advanced security research, system auditing, and network defense automation. Version 7.0.4-LTS introduces a dual-interface ecosystem: a high-fidelity Interactive CLI and the new **Net.py** Desktop GUI.
+
+---
+
+## 🚀 Two Ways to Operate
+
+### 1. Advanced Desktop GUI (Net.py)
+A full Python window interface designed for users who prefer visual management and automated batch processing.
 ```bash
 python Net.py
 ```
-**Features:**
-- Real-time terminal output.
-- Module navigation sidebar.
-- **Batch (.bat) Runner**: Execute external automation scripts directly.
-- Modern dark-theme interface.
-
----
-
-## ⚠️ CRITICAL: FIX FOR WINDOWS "FATAL ERROR"
-If you see `Fatal error in launcher: Unable to create process...` when running `pip`, **DO NOT PANIC**. Your Python installation is fine, but the Windows pip launcher is broken.
-
-**The Fix:** Always use `python -m pip` instead of `pip`.
-
-```powershell
-# WRONG (will likely fail on Windows)
-pip install .
-
-# RIGHT (always works)
-python -m pip install .
-```
-
----
-
-## 🚩 GITHUB ACCOUNT SUSPENDED?
-If you see `remote: Your account is suspended` when cloning:
-1. This is a **GitHub platform issue**, not a bug in Aaayafuj.
-2. Visit [https://support.github.com](https://support.github.com) immediately.
-3. Check your email for a "Notice of Suspension" from GitHub.
-4. Once GitHub clears your account, the `git clone` command will work again.
-
----
-
-## Installation
-
-```bash
-# 1. Clone (Latest Official Repository)
-git clone https://github.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py.git
-cd Aaayafuja_CyberSecurity7.py
-
-# 2. Install Dependencies safely
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-
-# 3. Install the Tool
-python -m pip install .
-```
-
-## Usage Modes
-
-### 1. Advanced GUI (Net.py)
-```bash
-python Net.py
-```
+*   **Visual Terminal**: Integrated real-time output console.
+*   **Batch Runner**: One-click execution for `.bat` and automation scripts.
+*   **Module Sidebar**: Quick access to all 300+ command paths.
 
 ### 2. Interactive CLI Console
+The professional shell experience (as seen in the terminal) with combinational command logic.
 ```bash
+python main.py
+# or if installed via pip:
 aaayafuj
 ```
+*   **Combinational Logic**: Access over 300+ command variations using the `category [cmd] [sub]` structure.
+*   **Interactive Shell**: Sandboxed environment with persistent session state.
 
-### 3. Quick Commands
-- `aaayafuj doctor`: Run environment diagnostics.
-- `aaayafuj bot`: Launch the AI Help Assistant.
-- `aaayafuj verify`: Check tool integrity.
+---
 
-## Troubleshooting Logic
-If the tool won't start, run the doctor directly:
+## 🛠️ Installation & Setup
+
+### 📥 1. Clone the Repository
 ```bash
-python aaayafuj/utils/env_check.py
+git clone https://github.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py.git
+cd Aaayafuja_CyberSecurity7.py
 ```
+
+### 🐍 2. Safe Dependency Installation
+To avoid common Windows path errors, always use the module-invocation method:
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install .
+```
+
+---
+
+## ⚠️ Troubleshooting & Fixes
+
+### 🚩 "Fatal error in launcher" (Windows Fix)
+If you see `Unable to create process using...` when running `pip`, your Windows path handlers are out of sync. 
+**The Fix:** Never type `pip`. Always type `python -m pip`.
+
+### 🚩 GitHub Account Suspension
+If `git clone` returns a **403 Forbidden** or **Suspension Error**:
+1. This is a GitHub platform filter, not a tool bug.
+2. Visit [support.github.com](https://support.github.com) to restore access.
+3. Once restored, the repository will be accessible immediately.
+
+---
+
+## 🧠 Combinational Command Architecture
+ACS7 doesn't just provide 300 tools; it provides a **Combinational Framework**. By mixing categories, commands, and flags, you unlock a massive operational surface:
+
+| Category | Description | Examples |
+| :--- | :--- | :--- |
+| `scan` | Security & Integrity Scanners | `scan malware`, `scan integrity --full` |
+| `net` | Network Diagnostics & TLS | `net info`, `net tls-check`, `net dns` |
+| `sys` | System Auditing & Health | `sys info`, `sys kernel`, `sys processes` |
+| `assets` | Cryptographic Asset Management | `assets hash`, `assets sign`, `assets verify` |
+| `sec` | Compliance & Policies | `sec audit`, `sec baseline`, `sec status` |
+
+---
+
+## 🤖 AI Knowledge Assistant
+Stuck? Ask the **HelpBot**. ACS7 includes an AI-driven knowledge base designed to explain architectural choices, tool logic, and professional usage.
+```bash
+aaayafuj > bot
+```
+
+---
+
+## ⚖️ License
+**Private Cybersecurity Research License (v7.0)**
+This software is intended for authorized security auditing, academic research, and system hardening only. Misuse of this tool for unauthorized activities is strictly prohibited.
+
+**Developed by Aaayafuj Cybersecurity Team.**
