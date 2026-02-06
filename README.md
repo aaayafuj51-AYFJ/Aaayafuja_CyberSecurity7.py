@@ -29,9 +29,9 @@ If you see `remote: Your account is suspended` when cloning:
 ## Installation
 
 ```bash
-# 1. Clone (Once your account is active)
-git clone https://github.com/aaayafuj51-AYFJ/Aaayafuj_Cybersecurity7.git
-cd Aaayafuj_Cybersecurity7
+# 1. Clone (Latest Official Repository)
+git clone https://github.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py.git
+cd Aaayafuja_CyberSecurity7.py
 
 # 2. Install Dependencies safely
 python -m pip install --upgrade pip

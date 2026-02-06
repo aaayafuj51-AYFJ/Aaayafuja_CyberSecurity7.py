@@ -20,4 +20,5 @@ setup(
     description="A modular, high-performance Python CLI toolset for security auditing.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
+    url="https://github.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py",
 )
