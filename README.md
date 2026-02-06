@@ -1,6 +1,7 @@
 # Aaayafuj Cybersecurity Suite 7
 
-A modular, high-performance Python CLI toolset for security auditing, network scanning, and system integrity verification. Designed for professional researchers and security enthusiasts.
+* A modular, high-performance Python CLI toolset for security auditing, network scanning, and system integrity verification. Designed for professional researchers and security enthusiasts.
+<img width="798" height="420" alt="Screenshot 2026-02-05 233755" src="https://github.com/user-attachments/assets/ce9bb3f9-5bf7-4e6f-8ac7-29b155cc025e" />
 
 ## Features
 
