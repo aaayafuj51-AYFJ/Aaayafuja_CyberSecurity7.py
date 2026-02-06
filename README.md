@@ -1,7 +1,19 @@
 # Aaayafuj Cybersecurity Suite 7
 
-* A modular, high-performance Python CLI toolset for security auditing, network scanning, and system integrity verification.
-<img width="1458" height="822" alt="Screenshot 2026-02-05 235212" src="https://github.com/user-attachments/assets/db42d1ff-cd5f-47be-a93c-ce7cdaf2c555" />
+A modular, high-performance Python ecosystem for security auditing, network scanning, and system integrity verification.
+
+## 🚀 NEW: AAAYAFUJ NET (Desktop GUI)
+For a full visual experience, run the advanced Desktop UI:
+```bash
+python Net.py
+```
+**Features:**
+- Real-time terminal output.
+- Module navigation sidebar.
+- **Batch (.bat) Runner**: Execute external automation scripts directly.
+- Modern dark-theme interface.
+
+---
 
 ## ⚠️ CRITICAL: FIX FOR WINDOWS "FATAL ERROR"
 If you see `Fatal error in launcher: Unable to create process...` when running `pip`, **DO NOT PANIC**. Your Python installation is fine, but the Windows pip launcher is broken.
@@ -42,14 +54,19 @@ python -m pip install -r requirements.txt
 python -m pip install .
 ```
 
-## Usage
+## Usage Modes
 
-### Interactive Mode
+### 1. Advanced GUI (Net.py)
+```bash
+python Net.py
+```
+
+### 2. Interactive CLI Console
 ```bash
 aaayafuj
 ```
 
-### Quick Commands
+### 3. Quick Commands
 - `aaayafuj doctor`: Run environment diagnostics.
 - `aaayafuj bot`: Launch the AI Help Assistant.
 - `aaayafuj verify`: Check tool integrity.

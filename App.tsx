@@ -59,10 +59,10 @@ const App: React.FC = () => {
                 <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8M3 16.2V21m0 0h4.8M3 21v-4.8M21 3v4.8M21 3h-4.8M21 3l-6 6M3 3l6 6M3 3v4.8M3 3h4.8"/></svg>
               </div>
               <h2 className="text-red-500 font-bold mb-2 flex items-center">
-                <span className="mr-2">⚠️</span> CRITICAL INSTALLATION UPDATE
+                <span className="mr-2">🚀</span> NEW: ADVANCED DESKTOP UI
               </h2>
               <p className="text-sm text-gray-300 mb-4">
-                The official repository has moved to a new address. Use the following steps to ensure a successful installation and bypass "Fatal Error" pip launcher issues on Windows.
+                Version 7.0.4 now includes <strong>Net.py</strong>, a full Python window interface for desktop users. Run it with <code>python Net.py</code> to access advanced batch processing and terminal emulation.
               </p>
               <div className="p-3 bg-black/40 rounded border border-red-500/20 text-xs text-gray-400">
                 Repository: <span className="text-red-400 font-mono">{repoUrl}</span>
@@ -92,28 +92,34 @@ const App: React.FC = () => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-lg font-bold text-white border-l-4 border-blue-500 pl-3">System Doctor</h3>
+                <h3 className="text-lg font-bold text-white border-l-4 border-blue-500 pl-3">Execution Commands</h3>
                 <div className="bg-[#121218] p-6 rounded-xl border border-gray-800 h-full">
                   <p className="text-sm text-gray-400 mb-6">
-                    If the tool fails to launch, run the built-in diagnostic module to identify environment corruption.
+                    Choose your preferred interaction method below. Use Net.py for a graphical experience or aaayafuj for CLI.
                   </p>
                   <div className="flex flex-col space-y-4">
                     <button 
-                      onClick={() => handleCopy("python aaayafuj/utils/env_check.py")}
+                      onClick={() => handleCopy("python Net.py")}
                       className="w-full btn-primary text-white font-bold py-3 rounded text-sm uppercase tracking-tighter"
                     >
-                      Copy Diagnostic Cmd
+                      Copy Desktop UI (Net.py)
+                    </button>
+                    <button 
+                      onClick={() => handleCopy("aaayafuj")}
+                      className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 rounded text-sm uppercase tracking-tighter"
+                    >
+                      Copy CLI Command
                     </button>
                     <div className="pt-6 border-t border-gray-800">
                       <h4 className="text-xs font-bold text-gray-500 mb-2 uppercase">Status Monitors</h4>
                       <div className="grid grid-cols-2 gap-2">
                         <div className="p-3 bg-black/30 rounded border border-gray-800/50">
-                          <div className="text-[10px] text-gray-500 uppercase">Engine</div>
-                          <div className="text-green-500 text-xs">Ready</div>
+                          <div className="text-[10px] text-gray-500 uppercase">GUI Engine</div>
+                          <div className="text-green-500 text-xs">READY</div>
                         </div>
                         <div className="p-3 bg-black/30 rounded border border-gray-800/50">
-                          <div className="text-[10px] text-gray-500 uppercase">Integrity</div>
-                          <div className="text-green-500 text-xs">99.9%</div>
+                          <div className="text-[10px] text-gray-500 uppercase">CLI Core</div>
+                          <div className="text-green-500 text-xs">STABLE</div>
                         </div>
                       </div>
                     </div>
@@ -126,18 +132,18 @@ const App: React.FC = () => {
 
         {activeTab === 'docs' && (
           <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
-             <h2 className="text-2xl font-bold text-white">System Architecture</h2>
+             <h2 className="text-2xl font-bold text-white">Advanced Architecture</h2>
              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {['Core Engine', 'Scan Modules', 'Network Hub'].map(mod => (
+                {['Net.py GUI', 'aaayafuj CLI', 'Security Core'].map(mod => (
                   <div key={mod} className="p-6 bg-[#121218] rounded border border-gray-800 hover:border-red-500/50 transition-colors cursor-default">
                     <h3 className="text-red-500 font-bold mb-2">{mod}</h3>
-                    <p className="text-xs text-gray-500">Low-level integration for v7 framework operations.</p>
+                    <p className="text-xs text-gray-500">V7.0 Architecture integration for full suite operations.</p>
                   </div>
                 ))}
              </div>
              <div className="p-8 bg-black border border-gray-800 rounded-xl">
                 <p className="text-gray-400 leading-relaxed text-sm">
-                  Aaayafuj is designed to be fully modular. Every command corresponds to a specific sub-process that runs in isolation to prevent system-wide crashes during intense scanning operations.
+                  Aaayafuj is designed to be fully modular. The <strong>Net.py</strong> window acts as a visual wrapper for the high-performance CLI engine, providing a more intuitive way to manage 300+ command combinations and run automated <strong>.bat</strong> scripts.
                 </p>
              </div>
           </div>
@@ -146,7 +152,7 @@ const App: React.FC = () => {
 
       {/* Footer */}
       <footer className="p-6 border-t border-gray-800 text-[10px] text-gray-600 text-center uppercase tracking-[0.2em]">
-        © {new Date().getFullYear()} Aaayafuj Cybersecurity | Professional Grade Framework
+        © {new Date().getFullYear()} Aaayafuj Cybersecurity | Advanced Framework Ecosystem
       </footer>
 
       {/* Copy Toast */}
