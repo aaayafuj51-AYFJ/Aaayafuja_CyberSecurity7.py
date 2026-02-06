@@ -1,8 +1,8 @@
 # Aaayafuj Cybersecurity Suite 7 (ACS7)
 
-![Aaayafuj Banner](https://raw.githubusercontent.com/aaayafuj51-AYFJ/Aaayafuja_CyberSecurity7.py/main/assets/banner_preview.png)
+![Aaayafuj Interactive Console](https://github.com/user-attachments/assets/13966a9b-b99d-4278-9b52-71db0c10017e)
 
-**Aaayafuj Cybersecurity Suite 7** is a modular, high-performance Python framework engineered for advanced security research, system auditing, and network defense automation. Version 7.0.4-LTS introduces a dual-interface ecosystem: a high-fidelity Interactive CLI and the new **Net.py** Desktop GUI.
+**Aaayafuj Cybersecurity Suite 7** is a modular, high-performance Python framework engineered for advanced security research, system auditing, and network defense automation. Version 7.0.4-LTS introduces a dual-interface ecosystem: a high-fidelity Interactive CLI and the advanced **Net.py** Desktop GUI.
 
 ---
 
@@ -18,14 +18,14 @@ python Net.py
 *   **Module Sidebar**: Quick access to all 300+ command paths.
 
 ### 2. Interactive CLI Console
-The professional shell experience (as seen in the terminal) with combinational command logic.
+The professional shell experience (as seen in the screenshot above) with combinational command logic.
 ```bash
 python main.py
 # or if installed via pip:
 aaayafuj
 ```
 *   **Combinational Logic**: Access over 300+ command variations using the `category [cmd] [sub]` structure.
-*   **Interactive Shell**: Sandboxed environment with persistent session state.
+*   **Interactive Shell**: Sandboxed environment with persistent session state and dedicated `bot` assistant.
 
 ---
 
