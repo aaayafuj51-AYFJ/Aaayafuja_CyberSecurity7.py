@@ -1,6 +1,7 @@
 # Aaayafuj Cybersecurity Suite 7
 
-A modular, high-performance Python ecosystem for security auditing, network scanning, and system integrity verification.
+* A modular, high-performance Python ecosystem for security auditing, network scanning, and system integrity verification.
+<img width="1458" height="822" alt="Screenshot 2026-02-05 235212" src="https://github.com/user-attachments/assets/7c854af8-b547-4d78-86f5-46443a957e0d" />
 
 ## 🚀 NEW: AAAYAFUJ NET (Desktop GUI)
 For a full visual experience, run the advanced Desktop UI:
